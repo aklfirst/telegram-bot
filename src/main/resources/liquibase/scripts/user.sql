@@ -7,5 +7,5 @@ CREATE TABLE notification_task
     chat_id   INTEGER,
     message   VARCHAR,
     date_time TIMESTAMP
-);
+)
 
