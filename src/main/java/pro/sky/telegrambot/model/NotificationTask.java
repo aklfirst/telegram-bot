@@ -12,14 +12,14 @@ public class NotificationTask {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
-    private long chat_id;
+    private long chatId;
     private String message;
-    private LocalDateTime date_time;
+    private LocalDateTime dateTime;
 
-    public NotificationTask(long chat_id, String message, LocalDateTime date_time) {
-        this.chat_id = chat_id;
+    public NotificationTask(long chatId, String message, LocalDateTime dateTime) {
+        this.chatId = chatId;
         this.message = message;
-        this.date_time = date_time;
+        this.dateTime = dateTime;
     }
 
     public NotificationTask() {
@@ -30,28 +30,28 @@ public class NotificationTask {
         return id;
     }
 
-    public long getChat_id() {
-        return chat_id;
+    public long getChatId() {
+        return chatId;
     }
 
     public String getMessage() {
         return message;
     }
 
-    public LocalDateTime getDate_time() {
-        return date_time;
+    public LocalDateTime getDateTime() {
+        return dateTime;
     }
 
-    public void setChat_id(long chat_id) {
-        this.chat_id = chat_id;
+    public void setChatId(long chatId) {
+        this.chatId = chatId;
     }
 
     public void setMessage(String message) {
         this.message = message;
     }
 
-    public void setDate_time(LocalDateTime date_time) {
-        this.date_time = date_time;
+    public void setDateTime(LocalDateTime dateTime) {
+        this.dateTime = dateTime;
     }
 
     @Override
